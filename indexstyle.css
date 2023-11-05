@@ -86,79 +86,9 @@
 /* Body Configuration  */
 body {
     margin: 0;
-    background: #330a19d5;
+    background: #0e0005d5;
 }
-/* Brief Description*/
-.brief h2 {
-    font-size: 2.5em; /* Adjust size as needed */
-    font-weight: bolder;
-    color: #fff;
-    margin-bottom: 20px; /* Space below the title */
-    padding-left: 50px;
-    padding-top: 20px;
-}
-.brief h3 {
-    font-size: 1.1em; /* Adjusts the font size of the description */
-    line-height: 1.5; /* Gives a better readability to the text */
-    text-align: justify; /* Justifies the text for a cleaner look */
-    color: #fff;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 30px;
-}
-/*Education Container/configuration*/
-.education-title h2 {
-    font-size: 2.5em; /* Adjust size as needed */
-    font-weight: bolder;
-    color: #fff;
-    margin-bottom: 10px; /* Space below the title */
-    padding-left: 50px;
-    padding-top: 5px;
-}
-.education-Row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Wraps onto the next line if not enough space */
-    gap: 25px; /* Space between institutions */
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-}
-.instituion .feature-title {
-    font-size: 2em;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    flex-wrap: nowrap;
-    margin-bottom: 20px; /* Space below the title */
-}
-.instituion {
-    flex: 1;
-    background-color: #330a19e5;
-    padding: 50px;
-    flex-wrap: nowrap;
-    border-radius: 10px; /* Rounded corners */
 
-}
-.instituion h4 {
-    color: #fff;
-    flex: none;
-    font-size: 20px;
-    text-align: center;
-    flex-wrap: nowrap;
-    padding: 15px;
-}
-.edu-img {
-    max-width: 300px;
-    height: auto;
-    object-fit: cover; /* Ensures the images cover the set size without distortion */
-    display: block;
-    margin: 20px auto;
-}
-.btn-edu {
-    font-size: 1.5em;
-    font-weight: 500;
-}
 /*Footer configuration */
 .page-footer {
     background-color: #222;
