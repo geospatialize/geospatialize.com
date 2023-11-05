@@ -1,3 +1,28 @@
+/* Base styles for h1 and h2, used for PC */
+.page-header .description h1 {
+    font-size: 72px; /* Size for PC */
+    color: #fff; /* Dark grey color */
+}
+
+.page-header .description h2 {
+    font-size: 24px; /* Size for PC */
+    color: #ffffff; /* Medium grey color */
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+    .page-header .description h1 {
+        font-size: 24px; /* Smaller size for mobile */
+        color: #ffffff; /* Dark grey color, can be changed if you want a different color for mobile */
+    }
+
+    .page-header .description h2 {
+        font-size: 18px; /* Smaller size for mobile */
+        color: #ffffff; /* Medium grey color, can be changed if you want a different color for mobile */
+    }
+}
+
+
 /* Nav Bar Configuration*/
 .navbar {
     background: rgb(7,22,48);
