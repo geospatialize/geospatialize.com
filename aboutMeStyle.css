@@ -1,6 +1,6 @@
 /* Nav Bar Configuration*/
 .navbar {
-    background: rgb(7, 22, 48);
+    background: #0C2A2A;
 }
 .nav-link,
 .navbar-brand {
@@ -85,44 +85,106 @@
 
 /* Body Configuration  */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    background:#0e0005d5;
+    background: #7F7F6D;
 }
-/* Brief Description*/
+/* Brief Description */
 .brief h2 {
     font-size: 2.5em; /* Adjust size as needed */
     font-weight: bolder;
     color: #fff;
     margin-bottom: 20px; /* Space below the title */
-    padding-left: 50px;
-    padding-top: 20px;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
 }
 .brief h3 {
     font-size: 1.1em; /* Adjusts the font size of the description */
     line-height: 1.5; /* Gives a better readability to the text */
     text-align: justify; /* Justifies the text for a cleaner look */
     color: #fff;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
+/* Modified and added styles for mobile responsiveness */
+
+@media (max-width: 600px) {
+    .brief h2 {
+        font-size: 2em; /* Adjusted font size */
+    }
+    .brief h3 {
+        font-size: 0.8em; /* Adjusted font size */
+    }
+    .education-title h2,
+    .instituion .feature-title,
+    .instituion h4 {
+        font-size: 0.8em; /* Adjusted font size */
+    }
+    .btn-edu {
+        font-size: 1em; /* Adjusted font size */
+    }
+    /* ... other styles ... */
+}
+
+/* Additional styles for even smaller screens */
+
+@media (max-width: 300px) {
+    .brief h2 {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+    .brief h3 {
+        font-size: 0.6em; /* Adjusted font size */
+    }
+    .education-title h2,
+    .instituion .feature-title,
+    .instituion h4 {
+        font-size: 0.6em; /* Adjusted font size */
+    }
+    .btn-edu {
+        font-size: 0.8em; /* Adjusted font size */
+    }
+    /* ... other styles ... */
+}
+
 /*Education Container/configuration*/
 .education-title h2 {
     font-size: 2.5em; /* Adjust size as needed */
     font-weight: bolder;
     color: #fff;
     margin-bottom: 10px; /* Space below the title */
-    padding-left: 50px;
-    padding-top: 5px;
+    padding-left: 2.5%;
+    padding-top: 1.5%;
 }
+
+/* ... Other existing styles ... */
+
+/* Modified and added styles for mobile responsiveness */
+@media (max-width: 600px) {
+    .education-title h2 {
+        font-size: 2em; /* Adjusted font size */
+    }
+    /* ... Other styles ... */
+}
+
+/* Additional styles for even smaller screens */
+@media (max-width: 300px) {
+    .education-title h2 {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+    /* ... Other styles ... */
+}
+
 .education-Row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Wraps onto the next line if not enough space */
     gap: 25px; /* Space between institutions */
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
 }
 .instituion .feature-title {
     font-size: 2em;
@@ -130,12 +192,12 @@ body {
     color: #fff;
     text-align: center;
     flex-wrap: nowrap;
-    margin-bottom: 20px; /* Space below the title */
+    margin-bottom: 10%; /* Space below the title */
 }
 .instituion {
     flex: 1;
-    background-color: #330a19e5;
-    padding: 50px;
+    background-color: #0C2A2A;
+    padding: 1.75%;
     flex-wrap: nowrap;
     border-radius: 10px; /* Rounded corners */
 
@@ -161,6 +223,7 @@ body {
 }
 /*Footer configuration */
 .page-footer {
+    flex-grow: 1;
     background-color: #222;
     color: #ccc;
     padding: 2vw;
@@ -185,7 +248,7 @@ body {
     text-align: center;
 }
 /* For Mobile use (resizing*/
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .footer-title {
         font-size: 12px; /* minimum font size */
         font-weight: bold;

@@ -17,132 +17,96 @@
     justify-content: flex-end;
 }
 
-/* Add custom CSS styles for your carousel here */
-.carouselcontent {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #FEFFDA;
-    padding-bottom: 0.5%;
-}
-.carousel-text {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1%;
-    border-radius: 1%;
-    color: #fff;
-  }
-  
-.carousel-inner img {
-    display: block;
-    max-height: 480px; /* Maximum height for large displays */
-    width: auto;
-    object-fit: contain;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-@media (max-width: 1280px) {
-    .carousel-inner img {
-      max-width: 100%;
-      max-height: calc(100vw * (720 / 1280)); /* Keep the aspect ratio 720p */
-    }
+/*About Me - Header Configuration*/
+.header {
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-
-/* Ensure that carousel captions are responsive and do not overflow the screen width on mobile devices */
-.carousel-text {
+.overlay {
     position: absolute;
-    right: 10%;
-    bottom: 0.2%;
-    left: 10%;
-    z-index: 10;
-    color: #fff;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
     text-align: center;
 }
-
-/* For smaller devices, adjust the caption placement and font sizes */
-@media (max-width: 768px) {
-    .carousel-text {
-      right: 10%;
-      left: 10%;
-      text-align: center;
+.description h1 {
+    color: #ffffff;
+}
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.description button {
+    border: 1px solid rgb(7, 22, 48);
+    background: rgb(7, 22, 48);
+    border-radius: 0;
+    color: #fff;
+}
+.description button:hover {
+    border: 1px solid #fff;
+    background: rgb(7, 22, 48);
+    color: #0a4630;
+}
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
     }
-
-    .carousel-text h1 {
-      font-size: 1.5rem;
+    .description h1 {
+        font-size: 2em;
     }
-
-    .carousel-text p {
-      font-size: 1rem;
+    .description p {
+        font-size: 1.2rem;
+    }
+    .features {
+        margin: 0;
     }
 }
 
 /* Body Configuration  */
-.content {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 2.5%;
+body {
+    margin: 0;
+    align-items: center;
+    text-align: center;
     background: #ECFFDA;
 }
 
-.Articles {
-    margin: 0 auto;
-    max-width: 1200px;
+.content {
+    background-color: #FEFFDA;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
 
-.feature {
-    margin-bottom: 20px;
-}
 
-.feature-gallery {
-    flex: 1;
-    padding: 15px;
-}
 
-.feature-heading {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
 
-.lead {
-    font-size: 1.2em;
-}
 
-.feature-divider {
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 20px 0;
-}
 
-/* Project Image Styles */
-.projectImage {
-    max-width: 360px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-    .projectImage {
-        max-width: 100%;
-    }
-}
 
 /*Footer configuration */
 .page-footer {
+    flex-grow: 1;
     background-color: #222;
     color: #ccc;
     padding: 2vw;
@@ -167,7 +131,7 @@
     text-align: center;
 }
 /* For Mobile use (resizing*/
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .footer-title {
         font-size: 12px; /* minimum font size */
         font-weight: bold;
