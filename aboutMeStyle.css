@@ -1,0 +1,261 @@
+/* Nav Bar Configuration*/
+.navbar {
+    background: rgb(7, 22, 48);
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #11734f;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/*About Me - Header Configuration*/
+.header {
+    background-image: url("images/aboutMe-background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.description h1 {
+    color: #ffffff;
+}
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.description button {
+    border: 1px solid rgb(7, 22, 48);
+    background: rgb(7, 22, 48);
+    border-radius: 0;
+    color: #fff;
+}
+.description button:hover {
+    border: 1px solid #fff;
+    background: rgb(7, 22, 48);
+    color: #0a4630;
+}
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 2em;
+    }
+    .description p {
+        font-size: 1.2rem;
+    }
+    .features {
+        margin: 0;
+    }
+}
+
+/* Body Configuration  */
+body {
+    margin: 0;
+    background: #330a19d5;
+}
+/* Brief Description*/
+.brief h2 {
+    font-size: 2.5em; /* Adjust size as needed */
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 20px; /* Space below the title */
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.brief h3 {
+    font-size: 1.1em; /* Adjusts the font size of the description */
+    line-height: 1.5; /* Gives a better readability to the text */
+    text-align: justify; /* Justifies the text for a cleaner look */
+    color: #fff;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 30px;
+}
+/*Education Container/configuration*/
+.education-title h2 {
+    font-size: 2.5em; /* Adjust size as needed */
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 10px; /* Space below the title */
+    padding-left: 50px;
+    padding-top: 5px;
+}
+.education-Row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Wraps onto the next line if not enough space */
+    gap: 25px; /* Space between institutions */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+.instituion .feature-title {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px; /* Space below the title */
+}
+.instituion {
+    flex: 1;
+    background-color: #330a19e5;
+    padding: 50px;
+    flex-wrap: nowrap;
+    border-radius: 10px; /* Rounded corners */
+
+}
+.instituion h4 {
+    color: #fff;
+    flex: none;
+    font-size: 20px;
+    text-align: center;
+    flex-wrap: nowrap;
+    padding: 15px;
+}
+.edu-img {
+    max-width: 300px;
+    height: auto;
+    object-fit: cover; /* Ensures the images cover the set size without distortion */
+    display: block;
+    margin: 20px auto;
+}
+.btn-edu {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+/*Footer configuration */
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 2vw;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between; /* This will give equal space between the columns */
+    flex-wrap: nowrap; /* This will prevent wrapping to the next line */
+}
+.footer-col {
+    font-size: 1vw;
+    gap: 20px;
+}
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+.footer-text {
+    font-size: 16px;
+    text-align: center;
+}
+/* For Mobile use (resizing*/
+@media (max-width: 500px) {
+    .footer-title {
+        font-size: 12px; /* minimum font size */
+        font-weight: bold;
+        flex-wrap: nowrap;
+    }
+    .footer-text {
+        font-size: 0.8vw; /* minimum font size */
+        flex-wrap: nowrap;
+        padding: 3px;
+    }
+}
+/* For Mobile use (resizing) */
+@media (max-width: 600px) {
+    .footer-title {
+        font-size: 12px; /* minimum font size */
+        font-weight: bold;
+        flex-wrap: nowrap;
+    }
+    .footer-text {
+        font-size: 10px; /* minimum font size */
+        flex-wrap: nowrap;
+        padding: 3px;
+    }
+}
+.btn {
+    font-size: 18px;
+    border: 1px solid rgb(7, 22, 48);
+    background: rgb(7, 22, 48);
+    border-radius: 0;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+@media (max-width: 500px) {
+    .btn {
+        font-size: 16px;
+        border: 1px solid rgb(7, 22, 48);
+        background: rgb(7, 22, 48);
+        border-radius: 0;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
+.btn:hover {
+    border: 1px solid rgb(7, 22, 48);
+    background: #0a4630;
+    color: #fff;
+}
+.SocialIcon {
+    width: 24px; /* or any size you prefer */
+    height: 24px;
+    display: inline-block; /* Ensures the width and height are respected for inline elements like img */
+}
+.footer-copyright {
+    color: #666;
+    text-align: center;
+    font-size: 12pt;
+    padding-top: 20px;
+}
+.footer-time {
+    color: #666;
+    text-align: center;
+    font-size: 12pt;
+    padding: 0px;
+}
