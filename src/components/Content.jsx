@@ -875,7 +875,7 @@ export default function Content({ initialLayer = 'about', onLayerChange }) {
       
       {/* Footer bar */}
       <footer className="status-bar bg-background-darker border-t border-surface-border text-text text-xs px-4 h-8 flex items-center justify-between w-full">
-        <div className="status-date select-none">Last updated: February 11, 2025</div>
+        <div className="status-date select-none">Last updated: March 2nd, 2025</div>
         <div className="status-credit select-none">Information on Dave Choi</div>
       </footer>
     </div>

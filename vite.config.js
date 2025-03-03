@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  base: "/personal-website/", // Change this to match your repo name
-  plugins: [react()],
+  base: "/geospatialize.com/",  plugins: [react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
