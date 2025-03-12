@@ -9,18 +9,20 @@
   <!-- Outer Circle -->
   <circle cx="32" cy="32" r="30.5" stroke="#CCC" stroke-width="2" fill="#90CDF4" />
   
-  <!-- Group all lines and continents so they don't extend past the circle -->
+  <!-- Group all lines and continents with rotation applied -->
   <g clip-path="url(#circleClip)">
-    <!-- Latitude Lines -->
-    <path d="M9 12C12 14 52 14 55 12" stroke="#2F855A" stroke-width="4" />
-    <path d="M3.2 22C12 24 52 24 60.8 22" stroke="#2F855A" stroke-width="4" />
-    <path d="M1.5 32C12 34 52 34 62.5 32" stroke="#2F855A" stroke-width="4" />
-    <path d="M3.2 42C12 44 52 44 60.8 42" stroke="#2F855A" stroke-width="4" />
-    <path d="M9 52C12 54 52 54 55 52" stroke="#2F855A" stroke-width="4" />
-
-    <!-- Longitude Lines -->
-    <path d="M32 1.5V62.5" stroke="#2F855A" stroke-width="4" />
-    <path d="M44 60C50 44 50 20 44 4" stroke="#2F855A" stroke-width="4" />
-    <path d="M20 60C14 44 14 20 20 4" stroke="#2F855A" stroke-width="4" />
+    <!-- Apply 30 degree counter-clockwise rotation around center (32, 32) -->
+    <g transform="rotate(-30, 32, 32)">
+      <!-- Latitude Lines -->
+      <path d="M9 12C12 14 52 14 55 12" stroke="#2F855A" stroke-width="4" />
+      <path d="M3.2 22C12 24 52 24 60.8 22" stroke="#2F855A" stroke-width="4" />
+      <path d="M1.5 32C12 34 52 34 62.5 32" stroke="#2F855A" stroke-width="4" />
+      <path d="M3.2 42C12 44 52 44 60.8 42" stroke="#2F855A" stroke-width="4" />
+      <path d="M9 52C12 54 52 54 55 52" stroke="#2F855A" stroke-width="4" />
+      <!-- Longitude Lines -->
+      <path d="M32 1.5V62.5" stroke="#2F855A" stroke-width="4" />
+      <path d="M44 60C50 44 50 20 44 4" stroke="#2F855A" stroke-width="4" />
+      <path d="M20 60C14 44 14 20 20 4" stroke="#2F855A" stroke-width="4" />
+    </g>
   </g>
 </svg>
